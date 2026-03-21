@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Книга{% endblock %}
+
+{% block content %}
+<div class="container my-5" id="content" data-id="{{ id }}"></div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/book.js' %}"></script>
+{% endblock %}
