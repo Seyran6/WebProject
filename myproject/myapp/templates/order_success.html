@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Заказ оформлен{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <div class="alert alert-success py-5">
+                <h1 class="display-4 mb-4">✅ Заказ успешно оформлен!</h1>
+                <p class="lead mb-4">Спасибо за ваш заказ.</p>
+                <p class="mb-4">Номер вашего заказа: <strong>#{{ order_id }}</strong></p>
+                <hr class="my-4">
+                <p class="text-muted">Мы отправили подтверждение на вашу электронную почту.</p>
+                <p class="text-muted">Наш менеджер свяжется с вами в ближайшее время.</p>
+                <div class="mt-5">
+                    <a href="/" class="btn btn-primary btn-lg me-2">Вернуться в каталог</a>
+                    <a href="/cart/" class="btn btn-outline-secondary btn-lg">В корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
